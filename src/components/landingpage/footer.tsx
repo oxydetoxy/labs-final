@@ -4,6 +4,7 @@ import Link from "next/link";
 
 const lillitaOne = Lilita_One({
   weight: "400",
+  subsets: ["latin"],
 });
 
 export default function Footer() {
