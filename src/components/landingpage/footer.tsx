@@ -17,25 +17,33 @@ export default function Footer() {
               <div className="p-4 lg:p-10 flex flex-col gap-0 lg:gap-0 items-center mx-auto">
                 <div className="flex gap-4 mb-6">
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/company/thestrategylab-1618/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
                     <Linkedin className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.linkedin.com/company/thestrategylab-1618/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
                     <Youtube className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors block lg:hidden"
                   >
                     <Instagram className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors block lg:hidden"
                   >
                     <Facebook className="w-5 h-5" />
@@ -43,13 +51,17 @@ export default function Footer() {
                 </div>
                 <div className="gap-4 mb-6 hidden lg:flex">
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
                     <Instagram className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="#"
+                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
                     <Facebook className="w-5 h-5" />
@@ -140,13 +152,13 @@ export default function Footer() {
                     Have a question, a project, or just wanna nerd out over
                     strategy?{" "}
                     <Link
-                      href="mailto:Dhruv@thestrategylab.in"
+                      href="mailto:contactus@thestrategylab.in"
                       className="text-[#8B4513] hover:underline"
                     >
-                      Dhruvth@..
+                      contactus@..
                     </Link>{" "}
                     <br />
-                    +91 98765 43210
+                    +91 9818846104
                   </p>
                 </div>
               </div>
@@ -169,19 +181,19 @@ export default function Footer() {
               <div>
                 <p className="text-[#54453E] font-medium">Email:</p>
                 <Link
-                  href="mailto:Dhruv@thestrategylab.in"
+                  href="mailto:contactus@thestrategylab.in"
                   className="text-[#8B4513] hover:underline"
                 >
-                  Dhruv@thestrategylab.in
+                  contactus@thestrategylab.in
                 </Link>
               </div>
               <div>
                 <p className="text-[#54453E] font-medium">Phone:</p>
                 <Link
-                  href="tel:+919876543210"
+                  href="tel:+919818846104"
                   className="text-[#8B4513] hover:underline"
                 >
-                  +91 98765 43210
+                  +91 9818846104
                 </Link>
               </div>
             </div>

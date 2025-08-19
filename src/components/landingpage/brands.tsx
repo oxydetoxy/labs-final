@@ -60,7 +60,7 @@ export default function Brands() {
               </div>
             </div>
             <div className="fall-in" style={{ animationDelay: "800ms" }}>
-              <div className="h-24 w-24 translate-y-28 -translate-x-18 sm:translate-y-0 sm:translate-x-0 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-46 lg:w-46 border-2 border-[#4DD1F4] rounded-md transform rotate-[60.12deg] sm:mr-0 md:mr-7 overflow-hidden flex items-center justify-center">
+              <div className="h-24 w-24 translate-y-28 -translate-x-18 sm:translate-y-0 sm:translate-x-0 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-46 lg:w-46 border-2 border-[#4DD1F4] rounded-md transform rotate-[44.12deg] sm:mr-0 md:mr-7 overflow-hidden flex items-center justify-center">
                 <Image
                   src="/Little-tag.png"
                   alt="little-tag"
@@ -95,7 +95,7 @@ export default function Brands() {
                 alt="payal-jain"
                 height={500}
                 width={500}
-                className="rotate-[14.96deg] object-cover"
+                className="rotate-[14.96deg] object-cover translate-y-10"
               />
             </div>
             <div
@@ -107,7 +107,7 @@ export default function Brands() {
                 alt="shades"
                 height={500}
                 width={500}
-                className="rotate-[-20deg] object-cover"
+                className="rotate-[-50deg] object-cover translate-y-10"
               />
             </div>
             <div
@@ -159,7 +159,7 @@ export default function Brands() {
                 alt="payal-jain"
                 height={500}
                 width={500}
-                className="rotate-[14.96deg] object-cover"
+                className="rotate-[-14.96deg] object-cover translate-y-7"
               />
             </div>
             <div
@@ -171,7 +171,7 @@ export default function Brands() {
                 alt="shades"
                 height={500}
                 width={500}
-                className="rotate-[-20deg] object-cover"
+                className="rotate-[-40deg] object-cover translate-y-7"
               />
             </div>
             <div
@@ -183,7 +183,7 @@ export default function Brands() {
                 alt="vaishali"
                 height={500}
                 width={500}
-                className="rotate-[20deg] object-cover"
+                className="rotate-[-26deg]  object-cover translate-y-7"
               />
             </div>
             <div
@@ -195,7 +195,7 @@ export default function Brands() {
                 alt="ksafe"
                 height={500}
                 width={500}
-                className="rotate-[20deg] object-cover w-4/5 h-4/5"
+                className="rotate-[-90deg] object-cover w-4/5 h-4/5"
               />
             </div>
           </div>

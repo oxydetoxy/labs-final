@@ -92,7 +92,7 @@ export default function ThirdPage() {
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
           <select
             name="service"
-            className="w-full rounded-xl border px-5 py-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#4DD1F4]"
+            className="w-full  rounded-xl border px-2 py-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#4DD1F4]  "
           >
             <option value="">Select One</option>
             <option value="SEO">SEO</option>
@@ -112,7 +112,7 @@ export default function ThirdPage() {
         <div className="flex justify-center pt-4">
           <button
             type="submit"
-            className="bg-[#4DD1F4] text-[#54453E] px-6 md:px-8 py-3 rounded-md hover:bg-[#4DD1F4]/90 transition-colors"
+            className="bg-[#4DD1F4] text-[#54453E] px-6 md:px-8 py-3 rounded-md hover:bg-[#4DD1F4]/90 transition-colors cursor-pointer"
           >
             Submit
           </button>

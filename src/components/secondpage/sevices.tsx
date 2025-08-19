@@ -32,15 +32,15 @@ export default function Services() {
   const sections: Section[] = [
     {
       number: "01",
-      title: "SEO",
+      title: "Website Development",
       blurbTop: "A site that performs 24/7 — so you don't have to.",
       blurbBottom:
-        "Whether it’s paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
       features: [
-        { title: "Site Health & Technical SEO", icon: "/first.png" },
-        { title: "Keyword-Led Content Optimization", icon: "/second.png" },
-        { title: "Backlink Strategy & Authority Building", icon: "/third.png" },
-        { title: "Rank Tracking & SEO Analytics", icon: "/four.png" },
+        { title: "End-to-End Web Development", icon: "/nine.png" },
+        { title: "UI/UX Optimization", icon: "/ten.png" },
+        { title: "Tool & Analytics Setup", icon: "/eleven.png" },
+        { title: "Website Maintenance", icon: "/twelve.png" },
       ],
     },
     {
@@ -48,7 +48,7 @@ export default function Services() {
       title: "Paid Marketing",
       blurbTop: "A site that performs 24/7 — so you don't have to.",
       blurbBottom:
-        "Whether it’s paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
       features: [
         { title: "Performance & Funnel Audit", icon: "/five.png" },
         { title: "Digital Brand Visibility", icon: "/six.png" },
@@ -58,15 +58,15 @@ export default function Services() {
     },
     {
       number: "03",
-      title: "Website Development",
+      title: "SEO",
       blurbTop: "A site that performs 24/7 — so you don't have to.",
       blurbBottom:
-        "Whether it’s paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
       features: [
-        { title: "End-to-End Web Development", icon: "/nine.png" },
-        { title: "UI/UX Optimization", icon: "/ten.png" },
-        { title: "Tool & Analytics Setup", icon: "/eleven.png" },
-        { title: "Website Maintenance", icon: "/twelve.png" },
+        { title: "Site Health & Technical SEO", icon: "/first.png" },
+        { title: "Keyword-Led Content Optimization", icon: "/second.png" },
+        { title: "Backlink Strategy & Authority Building", icon: "/third.png" },
+        { title: "Rank Tracking & SEO Analytics", icon: "/four.png" },
       ],
     },
   ];
