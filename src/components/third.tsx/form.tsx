@@ -90,16 +90,34 @@ export default function ThirdPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
-          <select
-            name="service"
-            className="w-full  rounded-xl border px-2 py-4 bg-white focus:outline-none focus:ring-2 focus:ring-[#4DD1F4]  "
-          >
-            <option value="">Select One</option>
-            <option value="SEO">SEO</option>
-            <option value="Paid Marketing">Paid Marketing</option>
-            <option value="Website Development">Website Development</option>
-            <option value="Other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              name="service"
+              className="w-full rounded-xl border pl-10 pr-5 py-4 bg-white/50 backdrop-blur-sm placeholder:opacity-70 focus:outline-none focus:ring-2 focus:ring-[#4DD1F4] shadow-none appearance-none"
+              style={{ boxShadow: "none" }}
+            >
+              <option value="">Select One</option>
+              <option value="SEO">SEO</option>
+              <option value="Paid Marketing">Paid Marketing</option>
+              <option value="Website Development">Website Development</option>
+              <option value="Other">Other</option>
+            </select>
+            <div className="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+              <svg
+                className="w-5 h-5 text-gray-500"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
           <input
             type="text"
             name="company"
