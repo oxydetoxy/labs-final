@@ -97,12 +97,14 @@ export default function Header() {
         </Link>
       </div>
       <div className="hidden md:block">
-        <Button
-          size={"sm"}
-          className="md:size-auto md:px-6 md:py-2 cursor-pointer bg-[#54453E] hover:bg-[#54453E]"
-        >
-          Let&apos;s Talk
-        </Button>
+        <Link href="/lets-talk">
+          <Button
+            size={"sm"}
+            className="md:size-auto md:px-6 md:py-2 cursor-pointer bg-[#54453E] hover:bg-[#54453E]"
+          >
+            Let&apos;s Talk
+          </Button>
+        </Link>
       </div>
     </header>
   );

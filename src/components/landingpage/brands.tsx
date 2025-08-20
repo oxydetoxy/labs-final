@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 export default function Brands() {
@@ -37,9 +38,11 @@ export default function Brands() {
           <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
             Real Results
           </h1>
-          <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-md font-light mt-4 mb-8 z-50 hover:bg-[#4DD1F4]/80 hover:scale-105 transition-all duration-300">
-            All Services
-          </button>
+          <Link href="/services">
+            <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-md font-light mt-4 mb-8 z-50 hover:bg-[#4DD1F4]/80 hover:scale-105 transition-all duration-300">
+              All Services
+            </button>
+          </Link>
         </div>
 
         <div
@@ -66,7 +69,7 @@ export default function Brands() {
                   alt="little-tag"
                   height={500}
                   width={500}
-                  className="rotate-[-120deg] object-cover w-4/5 h-4/5"
+                  className="rotate-[-60deg] object-cover  h-4/5"
                 />
               </div>
             </div>

@@ -1,4 +1,5 @@
 import FeatureCard from "../ui/feature-card";
+import Link from "next/link";
 
 export default function CoreFeatures() {
   return (
@@ -11,9 +12,11 @@ export default function CoreFeatures() {
             <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-[#54453E] mb-4">
               The Lab&apos;s Core Experiments
             </h2>
-            <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-md font-medium hidden lg:block">
-              All Services
-            </button>
+            <Link href="/services">
+              <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-md font-medium hidden lg:block cursor-pointer">
+                All Services
+              </button>
+            </Link>
           </div>
           <div className="text-left lg:text-right max-w-sm px-1 flex flex-col items-center gap-4">
             <p className="text-gray-600 text-sm leading-relaxed text-center">
@@ -23,9 +26,11 @@ export default function CoreFeatures() {
               <br />
               designed to engineer real growth.
             </p>
-            <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-3xl font-medium block lg:hidden">
-              All Services
-            </button>
+            <Link href="/services">
+              <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-3xl font-medium block lg:hidden cursor-pointer">
+                All Services
+              </button>
+            </Link>
           </div>
         </div>
 
