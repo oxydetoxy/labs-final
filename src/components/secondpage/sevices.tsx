@@ -33,9 +33,9 @@ export default function Services() {
     {
       number: "01",
       title: "Website Development",
-      blurbTop: "A site that performs 24/7 — so you don't have to.",
+      blurbTop: "Websites That Convert, Not Just Exist ",
       blurbBottom:
-        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "A great website isn't just a digital presence — it's your most important sales tool.  At TSL, we approach web development with a focus on both form and function. From clean UI/UX design to back-end performance and long-term maintenance, we ensure your website keeps up with both your business goals and your audience’s expectations.",
       features: [
         { title: "End-to-End Web Development", icon: "/nine.png" },
         { title: "UI/UX Optimization", icon: "/ten.png" },
@@ -45,10 +45,10 @@ export default function Services() {
     },
     {
       number: "02",
-      title: "Paid Marketing",
-      blurbTop: "A site that performs 24/7 — so you don't have to.",
+      title: "Performance Marketing",
+      blurbTop: "Engineered Ad Campaigns That Actually Work.",
       blurbBottom:
-        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "At TSL, we run performance like scientists by combining smart targeting, behavioral data, and CRO-backed strategies. We don’t just spend your money; we stress-test every rupee to maximize returns and scale the right signals.",
       features: [
         { title: "Performance & Funnel Audit", icon: "/five.png" },
         { title: "Digital Brand Visibility", icon: "/six.png" },
@@ -59,9 +59,9 @@ export default function Services() {
     {
       number: "03",
       title: "SEO",
-      blurbTop: "A site that performs 24/7 — so you don't have to.",
+      blurbTop: "SEO That Drives Rankings, Not Just Traffic.",
       blurbBottom:
-        "Whether it's paid ads, SEO, or web development, each service is optimized to connect, convert, and compound results over time.",
+        "A website without SEO is like a store in the middle of a desert — no one's going to find it. On-page SEO ensures that every page on your site is optimized for search engines and user experience. Off-page SEO builds your site's authority, driving traffic and boosting rankings. Together, they are the pillars of successful online visibility. .",
       features: [
         { title: "Site Health & Technical SEO", icon: "/first.png" },
         { title: "Keyword-Led Content Optimization", icon: "/second.png" },
@@ -89,12 +89,12 @@ export default function Services() {
                   {section.number}
                 </div>
               </div>
-              <div className="flex justify-between w-full md:hidden">
+              <div className="flex flex-col gap-2 w-full md:hidden">
                 <h3 className="font-black text-[16px] flex gap-4">
                   <span className="opacity-70"> {section.number}</span>{" "}
                   <span className="font-bold">{section.title}</span>
                 </h3>
-                <p className="text-sm w-[40%]">{section.blurbTop}</p>
+                <p className="text-sm">{section.blurbTop}</p>
               </div>
               <div className="hidden md:block col-span-5">
                 <h3 className="font-black text-2xl md:text-4xl">

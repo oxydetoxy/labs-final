@@ -18,7 +18,7 @@ export default function Header() {
     <header
       className={`${
         isOpen ? "bg-white" : "bg-[#4DD1F4]"
-      } md:bg-white flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3`}
+      } md:bg-white md:fixed md:top-0 md:left-0 md:right-0 md:z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3`}
     >
       {!isOpen && (
         <button
@@ -78,7 +78,7 @@ export default function Header() {
           className="md:w-[70px] md:h-[70px] w-14 h-14"
         />
       </div>
-      <div className="items-center text-[#54453E] gap-4 md:gap-5 hidden md:flex">
+      <div className="items-center  text-[#54453E] gap-4 md:gap-5 hidden md:flex">
         <Link
           href="/"
           className={`text-sm md:text-base ${
