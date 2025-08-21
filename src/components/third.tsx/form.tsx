@@ -102,7 +102,7 @@ export default function ThirdPage() {
               <option value="Website Development">Website Development</option>
               <option value="Other">Other</option>
             </select>
-            <div className="absolute left-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+            <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
               <svg
                 className="w-5 h-5 text-gray-500"
                 fill="none"
