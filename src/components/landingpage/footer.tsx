@@ -105,7 +105,7 @@ export default function Footer() {
                 </form>
               </div>
               <div className="flex w-full justify-between">
-                <div className="space-y-2 mb-4 px-2">
+                <div className="space-y-1 mb-4 px-2 lg:-translate-y-10">
                   <h3
                     className={`text-lg lg:text-xl font-extrabold text-[#54453E] mb-2 ${lillitaOne.className}`}
                   >
@@ -123,26 +123,28 @@ export default function Footer() {
                   >
                     Services
                   </Link>
-                  <Link
+                  {/* <Link
                     href="/"
                     className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
                   >
                     About
                   </Link>
-                  <Link
+                  */}
+                  {/*  <Link
                     href="/"
                     className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
                   >
                     Case Studies
                   </Link>
+                  */}
                   <Link
                     href="/"
                     className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
                   >
-                    Contact
+                    Contact Us
                   </Link>
                 </div>
-                <div className="block lg:hidden w-[50%]">
+                <div className="block lg:hidden w-[50%]  -translate-x-10">
                   <h3
                     className={`text-lg lg:text-xl font-extrabold text-[#54453E] mb-3 lg:mb-6 ${lillitaOne.className}`}
                   >
@@ -153,12 +155,17 @@ export default function Footer() {
                     strategy?{" "}
                     <Link
                       href="mailto:contactus@thestrategylab.in"
-                      className="text-[#8B4513] hover:underline"
+                      className="text-[#8B4513] hover:underline "
                     >
-                      contactus@..
+                      contactus@thestrategylab.in
                     </Link>{" "}
                     <br />
-                    +91 9818846104
+                    <Link
+                      href="tel:+919818846104"
+                      className="text-[#8B4513] hover:underline"
+                    >
+                      +91 9818846104
+                    </Link>
                   </p>
                 </div>
               </div>
