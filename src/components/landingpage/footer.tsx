@@ -13,8 +13,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
           <div>
-            <div className="flex flex-col lg:flex-row gap-5 justify-between items-start lg:items-center">
-              <div className="p-4 lg:p-10 flex flex-col gap-0 lg:gap-0 items-center mx-auto">
+            <div className="flex  flex-col -ml-7 lg:flex-row gap-8 justify-between items-start lg:items-start">
+              <div className="p-4 lg:p-6 flex flex-col gap-0 lg:gap-0 items-center lg:items-start">
                 <div className="flex gap-4 mb-6">
                   <Link
                     href="https://www.linkedin.com/company/thestrategylab-1618/"
@@ -25,7 +25,7 @@ export default function Footer() {
                     <Linkedin className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="https://www.linkedin.com/company/thestrategylab-1618/"
+                    href="https://www.youtube.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
@@ -41,7 +41,7 @@ export default function Footer() {
                     <Instagram className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    href="https://www.facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors block lg:hidden"
@@ -59,7 +59,7 @@ export default function Footer() {
                     <Instagram className="w-5 h-5" />
                   </Link>
                   <Link
-                    href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
+                    href="https://www.facebook.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
@@ -73,7 +73,7 @@ export default function Footer() {
               </div>
               <div className="flex-col gap-2 flex lg:hidden">
                 <h3
-                  className={`text-xl font-extrabold text-[#54453E]${lillitaOne.className}`}
+                  className={`text-[36px] font-normal text-[#54453E] leading-[100%] ${lillitaOne.className}`}
                 >
                   Stay in the Lab Loop
                 </h3>
@@ -105,48 +105,36 @@ export default function Footer() {
                 </form>
               </div>
               <div className="flex w-full justify-between">
-                <div className="space-y-1 mb-4 px-2 lg:-translate-y-10">
+                <div className="space-y-2 mb-4">
                   <h3
-                    className={`text-lg lg:text-xl font-extrabold text-[#54453E] mb-2 ${lillitaOne.className}`}
+                    className={`text-[36px] font-normal text-[#54453E] mb-6 leading-[100%] ${lillitaOne.className}`}
                   >
                     Quick Links
                   </h3>
-                  <Link
-                    href="#"
-                    className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
-                  >
-                    Services
-                  </Link>
-                  {/* <Link
-                    href="/"
-                    className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
-                  >
-                    About
-                  </Link>
-                  */}
-                  {/*  <Link
-                    href="/"
-                    className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
-                  >
-                    Case Studies
-                  </Link>
-                  */}
-                  <Link
-                    href="/"
-                    className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
-                  >
-                    Contact Us
-                  </Link>
+                  <div className="space-y-2">
+                    <Link
+                      href="/"
+                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                    >
+                      Home
+                    </Link>
+                    <Link
+                      href="/services"
+                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                    >
+                      Services
+                    </Link>
+                    <Link
+                      href="/lets-talk"
+                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                    >
+                      Contact Us
+                    </Link>
+                  </div>
                 </div>
-                <div className="block lg:hidden w-[50%]  -translate-x-10">
+                <div className="block lg:hidden w-[45%]">
                   <h3
-                    className={`text-lg lg:text-xl font-extrabold text-[#54453E] mb-3 lg:mb-6 ${lillitaOne.className}`}
+                    className={`text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
                   >
                     Get in Touch
                   </h3>
@@ -177,7 +165,7 @@ export default function Footer() {
           </div>
           <div className="hidden lg:block">
             <h3
-              className={`text-lg lg:text-xl font-extrabold text-[#54453E] mb-3 lg:mb-6 ${lillitaOne.className}`}
+              className={`text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
             >
               Get in Touch
             </h3>
@@ -207,7 +195,7 @@ export default function Footer() {
           </div>
           <div className="flex-col gap-0 hidden lg:flex">
             <h3
-              className={`text-xl font-extrabold text-[#54453E] mb-3 lg:mb-6 ${lillitaOne.className}`}
+              className={`text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
             >
               Stay in the Lab Loop
             </h3>

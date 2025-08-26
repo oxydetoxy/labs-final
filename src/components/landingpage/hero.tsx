@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div
-      className="relative flex flex-col items-center justify-center pt-12 pb-32 md:pb-48 text-[#54453E] bg-cover bg-bottom bg-no-repeat"
+      className="relative flex flex-col items-center justify-center pt-28 md:pt-32 pb-32 md:pb-48 text-[#54453E] bg-cover bg-bottom bg-no-repeat"
       style={{ backgroundImage: "url(/bg.svg)" }}
     >
       <h1 className="font-display text-2xl md:text-4xl text-center z-10 px-4">

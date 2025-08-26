@@ -30,7 +30,7 @@ export default function Header() {
       )}
 
       {isOpen && (
-        <div className="w-full flex flex-col items-center gap-4 md:hidden">
+        <div className="w-full flex flex-col  items-center gap-4 md:hidden ">
           <div className="w-full flex justify-between items-center">
             <Image
               src="/logo.png"
