@@ -98,7 +98,7 @@ export default function Header() {
               pathname === "/lets-talk" ? "font-extrabold" : ""
             }`}
           >
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+      
             Let&apos;s Talk
           </Link>
         </div>
@@ -142,7 +142,7 @@ export default function Header() {
             size="sm"
             className="md:px-6 md:py-2 bg-[#54453E] hover:bg-[#54453E]"
           >
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
+           
             Let&apos;s Talk
           </Button>
         </Link>
