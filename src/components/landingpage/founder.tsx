@@ -57,10 +57,10 @@ export default function Founder() {
       </div>
       <div className="hidden lg:flex items-center justify-center px-4 lg:px-0 relative">
         {/* Left hanging line */}
-        <div className="absolute -top-[140px] xl:left-[24px] lg:left-[1px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
+        <div className="absolute -top-[140px] xl:left-[24px] lg:left-[1px] w-0.5 h-[1020px] bg-[#4DD1F4]"></div>
 
         {/* Right hanging line */}
-        <div className="absolute -top-[140px] right-[1px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
+        <div className="absolute -top-[140px] xl:right-[24px] lg:right-[1px] w-0.5 h-[1020px] bg-[#4DD1F4]"></div>
 
         <Image
           src="/founder.jpg"
