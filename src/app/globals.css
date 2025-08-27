@@ -118,9 +118,11 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+
   .font-display {
     font-family: var(--font-lilita-one);
   }
@@ -131,13 +133,16 @@
     transform: translate3d(0, -400px, 0);
     opacity: 0;
   }
+
   70% {
     transform: translate3d(0, 15px, 0);
     opacity: 1;
   }
+
   85% {
     transform: translate3d(0, -8px, 0);
   }
+
   100% {
     transform: translate3d(0, 0, 0);
     opacity: 1;
@@ -146,8 +151,10 @@
 
 .fall-in {
   opacity: 0;
-  transform: translate3d(0, -400px, 0); /* Ensure all boxes start from above */
+  transform: translate3d(0, -400px, 0);
+  /* Ensure all boxes start from above */
 }
+
 .animate-in .fall-in {
   animation: fallIn 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }

@@ -13,16 +13,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
           <div>
-            <div className="flex  flex-col -ml-7 lg:flex-row gap-8 justify-between items-start lg:items-start">
+            <div className="flex flex-col lg:flex-row gap-8 justify-center lg:justify-between items-center lg:items-start ml-6 sm:ml-8 text-center lg:text-left">
               <div className="p-4 lg:p-6 flex flex-col gap-0 lg:gap-0 items-center lg:items-start">
-                <div className="flex gap-4 mb-6">
+                <div className="flex gap-4 mb-6 justify-center lg:justify-start -ml-14 ">
                   <Link
                     href="https://www.linkedin.com/company/thestrategylab-1618/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
-                    <Linkedin className="w-5 h-5" />
+                    <Linkedin className="w-6 h-6 lg:w-5 lg:h-5" />
                   </Link>
                   <Link
                     href="https://www.youtube.com"
@@ -30,7 +30,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors"
                   >
-                    <Youtube className="w-5 h-5" />
+                    <Youtube className="w-6 h-6 lg:w-5 lg:h-5" />
                   </Link>
                   <Link
                     href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
@@ -38,7 +38,7 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors block lg:hidden"
                   >
-                    <Instagram className="w-5 h-5" />
+                    <Instagram className="w-6 h-6 lg:w-5 lg:h-5" />
                   </Link>
                   <Link
                     href="https://www.facebook.com"
@@ -46,10 +46,10 @@ export default function Footer() {
                     rel="noopener noreferrer"
                     className="bg-white p-3 h-max rounded-full lg:rounded-lg hover:scale-105 transition-colors block lg:hidden"
                   >
-                    <Facebook className="w-5 h-5" />
+                    <Facebook className="w-6 h-6 lg:w-5 lg:h-5" />
                   </Link>
                 </div>
-                <div className="gap-4 mb-6 hidden lg:flex">
+                <div className="gap-4 mb-6 hidden lg:flex -ml-14">
                   <Link
                     href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
                     target="_blank"
@@ -67,17 +67,14 @@ export default function Footer() {
                     <Facebook className="w-5 h-5" />
                   </Link>
                 </div>
-                <p className="text-sm text-[#54453E] opacity-80 block lg:hidden text-center">
-                  The Strategy Lab® is a trademark. All rights reserved.
-                </p>
               </div>
               <div className="flex-col gap-2 flex lg:hidden">
                 <h3
-                  className={`text-[36px] font-normal text-[#54453E] leading-[100%] ${lillitaOne.className}`}
+                  className={`text-[20px] sm:text-[36px] font-normal text-[#54453E] leading-[100%] ${lillitaOne.className}`}
                 >
                   Stay in the Lab Loop
                 </h3>
-                <p className="text-[#54453E]">
+                <p className="text-[14px] sm:text-base text-[#54453E]">
                   Want in on our experiments, strategies, and marketing
                   breakthroughs? Drop your email below — we&apos;ll only send
                   stuff worth testing!
@@ -107,26 +104,26 @@ export default function Footer() {
               <div className="flex w-full justify-between">
                 <div className="space-y-2 mb-4">
                   <h3
-                    className={`text-[36px] font-normal text-[#54453E] mb-6 leading-[100%] ${lillitaOne.className}`}
+                    className={`text-[20px] sm:text-[36px] font-normal text-[#54453E] mb-6 leading-[100%] ${lillitaOne.className}`}
                   >
                     Quick Links
                   </h3>
                   <div className="space-y-2">
                     <Link
                       href="/"
-                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                      className="block text-[14px] sm:text-base text-[#54453E] hover:text-[#8B4513] transition-colors"
                     >
                       Home
                     </Link>
                     <Link
                       href="/services"
-                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                      className="block text-[14px] sm:text-base text-[#54453E] hover:text-[#8B4513] transition-colors"
                     >
                       Services
                     </Link>
                     <Link
                       href="/lets-talk"
-                      className="block text-[#54453E] hover:text-[#8B4513] transition-colors"
+                      className="block text-[14px] sm:text-base text-[#54453E] hover:text-[#8B4513] transition-colors"
                     >
                       Contact Us
                     </Link>
@@ -134,11 +131,11 @@ export default function Footer() {
                 </div>
                 <div className="block lg:hidden w-[45%]">
                   <h3
-                    className={`text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
+                    className={`text-[20px] sm:text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
                   >
                     Get in Touch
                   </h3>
-                  <p className="text-[#54453E] mb-6">
+                  <p className="text-[14px] sm:text-base text-[#54453E] mb-6">
                     Have a question, a project, or just wanna nerd out over
                     strategy?{" "}
                     <Link
@@ -226,6 +223,13 @@ export default function Footer() {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* Trademark line - mobile centered, desktop stays in original position */}
+        <div className="mt-8 lg:hidden">
+          <p className="text-sm text-[#54453E] opacity-80 text-center">
+            The Strategy Lab® is a trademark. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
