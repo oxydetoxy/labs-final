@@ -35,7 +35,7 @@ export default function HeroCTA() {
       >
         <div className="relative z-10 max-w-5xl mx-auto text-center p-8">
           <h1
-            className="text-[16px] sm:text-[24px] mx-auto font-normal text-[#54453E] mb-8 leading-[100%] text-center px-2"
+            className="text-[14px] sm:text-[24px] mx-auto font-normal text-[#54453E] mb-8 leading-[100%] text-center px-2"
             style={{ fontFamily: "Lilita One" }}
           >
             <div className="whitespace-nowrap">

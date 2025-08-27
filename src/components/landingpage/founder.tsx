@@ -3,7 +3,12 @@ import Image from "next/image";
 export default function Founder() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-10 lg:gap-16 max-w-7xl mt-16 lg:mt-24 mx-auto px-4 py-10">
-      <div className="m-0 lg:m-24 flex flex-col items-center lg:items-start">
+      <div className="m-0 lg:m-24 flex flex-col items-center lg:items-start relative">
+        {/* Left hanging line for mobile - responsive positioning */}
+        <div className="absolute -top-[140px] left-[1px] xs:left-[24px] sm:left-[calc(50%-272px)] w-0.5 h-[740px] bg-[#4DD1F4] block lg:hidden"></div>
+
+        {/* Right hanging line for mobile - responsive positioning */}
+        <div className="absolute -top-[140px] right-[1px] xs:right-[24px] sm:right-[calc(50%-272px)] w-0.5 h-[740px] bg-[#4DD1F4] block lg:hidden"></div>
         <h1 className="text-4xl lg:text-[80px] hidden lg:block text-[#54453E]">
           Experiment.
           <br />
@@ -26,13 +31,6 @@ export default function Founder() {
         <div className="mt-5 text-[#4DD1F4] block lg:hidden text-center">
           <div className="flex items-center justify-center gap-2">
             <h1 className="text-xl lg:text-2xl font-black">Dhruv Tewari</h1>
-            <Image
-              src="/dhruvarrow.png"
-              alt="arrow"
-              width={24}
-              height={24}
-              className="w-6 h-6"
-            />
           </div>
           <p className="text-base lg:text-[24px]">Founder</p>
         </div>
@@ -59,10 +57,10 @@ export default function Founder() {
       </div>
       <div className="hidden lg:flex items-center justify-center px-4 lg:px-0 relative">
         {/* Left hanging line */}
-        <div className="absolute -top-[140px] left-[24px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
+        <div className="absolute -top-[140px] xl:left-[24px] lg:left-[1px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
 
         {/* Right hanging line */}
-        <div className="absolute -top-[140px] right-[24px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
+        <div className="absolute -top-[140px] right-[1px] w-0.5 h-[920px] bg-[#4DD1F4]"></div>
 
         <Image
           src="/founder.jpg"

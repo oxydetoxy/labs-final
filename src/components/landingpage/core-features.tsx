@@ -9,7 +9,7 @@ export default function CoreFeatures() {
       <div className="relative z-10 max-w-3xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center lg:items-center mb-8 md:mb-12">
           <div className="lg:mb-0">
-            <h2 className="font-display text-[20px] lg:text-[40px]  text-[#54453E] mb-4">
+            <h2 className="font-display text-[20px] lg:text-[30px]  text-[#54453E] mb-4">
               The Lab&apos;s Core Experiments
             </h2>
             <Link href="/services">
@@ -43,7 +43,7 @@ export default function CoreFeatures() {
             number="01"
             title="Performance<br />Advertising"
             description="Results that aren't just impressive. They're profitable. Making every dollar work harder so you don't have to."
-            imageWidth={167}
+            imageWidth={137}
             imageHeight={144}
           />
 
@@ -53,8 +53,8 @@ export default function CoreFeatures() {
             number="02"
             title="Website<br />Development<br />& Maintenance"
             description="A site that performs 24/7, so you don't have to."
-            imageWidth={250.3990020751953}
-            imageHeight={140.8494415283203}
+            imageWidth={167}
+            imageHeight={144}
           />
 
           <FeatureCard
@@ -63,7 +63,7 @@ export default function CoreFeatures() {
             number="03"
             title="On-Page &<br />Off-Page SEO"
             description="Get found by the right people, at the right time, for the right reasons."
-            imageWidth={255.3990020751953}
+            imageWidth={167}
             imageHeight={143.8494415283203}
           />
         </div>

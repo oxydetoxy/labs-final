@@ -11,15 +11,47 @@ import { Button } from "./ui/button";
 export default function Header() {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    // Set background to white after 5 seconds on desktop
+    const timer = setTimeout(() => {
+      if (window.innerWidth >= 768) {
+        console.log("5 seconds passed, making background white");
+        setIsScrolled(true);
+      }
+    }, 5000);
+
+    // Also listen to scroll to reset to transparent when at top
+    const handleScroll = () => {
+      if (window.innerWidth >= 768) {
+        if (window.scrollY === 0) {
+          console.log("Back to top, making background transparent");
+          setIsScrolled(false);
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Background class logic
+  const baseBg = isOpen ? "bg-white" : "bg-[#4DD1F4]";
+
+  const desktopScrollBg = isScrolled
+    ? "md:!bg-white md:shadow-md"
+    : "md:!bg-transparent";
 
   return (
     <header
-      className={`${
-        isOpen ? "bg-white" : "bg-[#4DD1F4]"
-      } md:bg-white md:fixed md:top-0 md:left-0 md:right-0 md:z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3`}
+      className={`md:fixed md:top-0 md:left-0 md:right-0 md:z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${baseBg} ${desktopScrollBg}`}
     >
+      {/* Mobile Menu Button */}
       {!isOpen && (
         <button
           className="cursor-pointer block md:hidden"
@@ -29,8 +61,9 @@ export default function Header() {
         </button>
       )}
 
+      {/* Mobile Menu Content */}
       {isOpen && (
-        <div className="w-full flex flex-col  items-center gap-4 md:hidden ">
+        <div className="w-full flex flex-col items-center gap-4 md:hidden">
           <div className="w-full flex justify-between items-center">
             <Image
               src="/logo.png"
@@ -61,24 +94,28 @@ export default function Header() {
           </Link>
           <Link
             href="/lets-talk"
-            className={`text-sm md:text-base  ${
+            className={`text-sm md:text-base ${
               pathname === "/lets-talk" ? "font-extrabold" : ""
             }`}
           >
-            Lets Talk
+            Let's Talk
           </Link>
         </div>
       )}
+
+      {/* Logo (Desktop) */}
       <div className="hidden md:block">
         <Image
           src="/logo.png"
           alt="logo"
-          width={56}
-          height={56}
-          className="md:w-[70px] md:h-[70px] w-14 h-14"
+          width={70}
+          height={70}
+          className="w-[70px] h-[70px]"
         />
       </div>
-      <div className="items-center  text-[#54453E] gap-4 md:gap-5 hidden md:flex">
+
+      {/* Desktop Nav Links */}
+      <div className="items-center text-[#54453E] gap-4 md:gap-5 hidden md:flex">
         <Link
           href="/"
           className={`text-sm md:text-base ${
@@ -96,13 +133,15 @@ export default function Header() {
           Services
         </Link>
       </div>
+
+      {/* Desktop CTA Button */}
       <div className="hidden md:block">
         <Link href="/lets-talk">
           <Button
-            size={"sm"}
-            className="md:size-auto md:px-6 md:py-2 cursor-pointer bg-[#54453E] hover:bg-[#54453E]"
+            size="sm"
+            className="md:px-6 md:py-2 bg-[#54453E] hover:bg-[#54453E]"
           >
-            Let&apos;s Talk
+            Let's Talk
           </Button>
         </Link>
       </div>
