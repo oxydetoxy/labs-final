@@ -98,7 +98,7 @@ export default function Header() {
               pathname === "/lets-talk" ? "font-extrabold" : ""
             }`}
           >
-            Let's Talk
+            Let&apos;s Talk
           </Link>
         </div>
       )}
@@ -141,7 +141,7 @@ export default function Header() {
             size="sm"
             className="md:px-6 md:py-2 bg-[#54453E] hover:bg-[#54453E]"
           >
-            Let's Talk
+            Let&apos;s Talk
           </Button>
         </Link>
       </div>
