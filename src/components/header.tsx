@@ -15,12 +15,10 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth >= 768) {
-        if (window.scrollY > 0) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
       }
     };
 
@@ -32,14 +30,12 @@ export default function Header() {
   }, []);
 
   // Background class logic
-  const baseBg = isOpen ? "bg-white" : "bg-[#4DD1F4]";
+  const baseBg = isOpen ? "bg-white" : "bg-transparent";
 
-  const desktopScrollBg = isScrolled
-    ? "md:!bg-white md:shadow-md"
-    : "md:!bg-transparent";
+  const scrollBg = isScrolled ? "!bg-white shadow-md" : "!bg-transparent";
   return (
     <header
-      className={`md:fixed md:top-0 md:left-0 md:right-0 md:z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${baseBg} ${desktopScrollBg}`}
+      className={`fixed top-0 left-0 right-0 z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${baseBg} ${scrollBg}`}
     >
       {/* Mobile Menu Button */}
       {!isOpen && (
