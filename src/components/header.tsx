@@ -30,12 +30,19 @@ export default function Header() {
   }, []);
 
   // Background class logic
-  const baseBg = isOpen ? "bg-white" : "bg-transparent";
+  const getBackgroundClass = () => {
+    if (isOpen) {
+      return "bg-white"; // Always white when menu is open
+    }
+    if (isScrolled) {
+      return "bg-white shadow-md"; // White when scrolled
+    }
+    return "bg-[#4DD1F4]"; // Blue when closed and not scrolled
+  };
 
-  const scrollBg = isScrolled ? "!bg-white shadow-md" : "!bg-transparent";
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${baseBg} ${scrollBg}`}
+      className={`fixed top-0 left-0 right-0 z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${getBackgroundClass()}`}
     >
       {/* Mobile Menu Button */}
       {!isOpen && (
@@ -67,6 +74,7 @@ export default function Header() {
             className={`text-sm md:text-base ${
               pathname === "/" ? "font-extrabold" : ""
             }`}
+            onClick={() => setIsOpen(false)}
           >
             Home
           </Link>
@@ -75,6 +83,7 @@ export default function Header() {
             className={`text-sm md:text-base ${
               pathname === "/services" ? "font-extrabold" : ""
             }`}
+            onClick={() => setIsOpen(false)}
           >
             Services
           </Link>
@@ -83,6 +92,7 @@ export default function Header() {
             className={`text-sm md:text-base ${
               pathname === "/lets-talk" ? "font-extrabold" : ""
             }`}
+            onClick={() => setIsOpen(false)}
           >
             {`Let's Talk`}
           </Link>
