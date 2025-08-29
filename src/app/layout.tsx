@@ -36,7 +36,7 @@ export default function RootLayout({
         }
       >
         <Providers>
-          <div className="w-screen h-screen overflow-x-hidden relative">
+          <div className="w-screen min-h-screen overflow-x-hidden relative">
             <Header />
             {children}
           </div>

@@ -14,19 +14,11 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    // Set background to white after 5 seconds on desktop
-    const timer = setTimeout(() => {
-      if (window.innerWidth >= 768) {
-        console.log("5 seconds passed, making background white");
-        setIsScrolled(true);
-      }
-    }, 5000);
-
-    // Also listen to scroll to reset to transparent when at top
     const handleScroll = () => {
       if (window.innerWidth >= 768) {
-        if (window.scrollY === 0) {
-          console.log("Back to top, making background transparent");
+        if (window.scrollY > 0) {
+          setIsScrolled(true);
+        } else {
           setIsScrolled(false);
         }
       }
@@ -35,7 +27,6 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      clearTimeout(timer);
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -46,7 +37,6 @@ export default function Header() {
   const desktopScrollBg = isScrolled
     ? "md:!bg-white md:shadow-md"
     : "md:!bg-transparent";
-
   return (
     <header
       className={`md:fixed md:top-0 md:left-0 md:right-0 md:z-50 flex gap-3 md:gap-0 justify-end md:justify-between items-center px-4 md:px-5 py-3 transition-all duration-300 ${baseBg} ${desktopScrollBg}`}
