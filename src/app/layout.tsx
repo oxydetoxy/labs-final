@@ -3,6 +3,7 @@ import "./globals.css";
 import Providers from "@/components/providers";
 import Header from "@/components/header";
 import { Montserrat, Lilita_One } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
             {children}
           </div>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
