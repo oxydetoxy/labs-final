@@ -37,6 +37,9 @@ export default function Header() {
     if (isScrolled) {
       return "bg-white shadow-md"; // White when scrolled
     }
+    if (pathname === "/about") {
+      return "bg-white"; // White for about page
+    }
     return "bg-[#4DD1F4]"; // Blue when closed and not scrolled
   };
 
