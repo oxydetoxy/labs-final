@@ -14,7 +14,7 @@ const data: string[] = [
 export default function AboutPage() {
   return (
     <>
-      <div className="pt-24 flex items-center justify-center">
+      <div className="pt-24 flex items-center justify-center px-2">
         <div className="relative">
           <Image
             src="/egg.png"
@@ -172,12 +172,7 @@ export default function AboutPage() {
               height={186}
               className="w-[331px] h-[366px] block sm:hidden"
             />
-           
-          
-           
           </div>
-
-          
 
           <div className="bg-[#4DD1F4] h-20 w-full mt-18"></div>
         </div>
