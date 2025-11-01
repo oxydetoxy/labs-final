@@ -21,7 +21,7 @@ export default function SecondPage() {
         />
       </div>
 
-      <div className="h-[2vh] w-full m-0 p-0 flex items-center justify-start gap-2 overflow-hidden">
+      <div className="h-[2vh] w-full m-0 p-0 flex items-center justify-start gap-4 overflow-hidden">
         <div className="bg-[#4DD1F4] w-[15%] h-full rounded-r-md "> </div>
         <div className="bg-[#4DD1F4] w-[15%] h-full rounded-md"> </div>
         <div className="bg-[#4DD1F4] w-[15%] h-full rounded-md"> </div>

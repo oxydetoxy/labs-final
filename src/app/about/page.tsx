@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Image from "next/image";
 import Footer from "@/components/landingpage/footer";
 import Founder from "@/components/landingpage/founder";
@@ -13,22 +12,6 @@ const data: string[] = [
 ];
 
 export default function AboutPage() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [startX, setStartX] = useState(0);
-  const [endX, setEndX] = useState(0);
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setStartX(e.touches[0].clientX);
-  };
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    setEndX(e.changedTouches[0].clientX);
-    const diff = startX - endX;
-    if (diff > 50) {
-      setCurrentIndex((prev) => (prev + 1) % data.length);
-    } else {
-      setCurrentIndex((prev) => (prev - 1 + data.length) % data.length);
-    }
-  };
-
   return (
     <>
       <div className="pt-24 flex items-center justify-center">
@@ -183,61 +166,18 @@ export default function AboutPage() {
               className="w-full hidden sm:block"
             />
             <Image
-              src="/shield2.png"
+              src="/mobileabout.png"
               alt="about"
               width={331}
               height={186}
-              className="w-[331px] h-[186px] block sm:hidden"
+              className="w-[331px] h-[366px] block sm:hidden"
             />
-            <Image
-              src="/ring.png"
-              alt="about"
-              width={112}
-              height={46}
-              className="absolute block sm:hidden"
-              style={{
-                width: "112.55px",
-                height: "46.57px",
-                left: "5%",
-                top: "180px",
-              }}
-            />
-            <Image
-              src="/arc2.png"
-              alt="about"
-              width={112}
-              height={46}
-              className="absolute block sm:hidden"
-              style={{
-                width: "112.55px",
-                height: "46.57px",
-                right: "5%",
-                top: "180px",
-              }}
-            />
-            <div
-              className="sm:hidden text-xl font-display w-[300px] text-[#54453E] text-center absolute  top-[225px] cursor-pointer select-none"
-              onTouchStart={handleTouchStart}
-              onTouchEnd={handleTouchEnd}
-            >
-              <h1 className="transition-opacity duration-300">
-                {data[currentIndex]}
-              </h1>
-
-              <div className="flex justify-center mt-2 gap-1">
-                {data.map((_, index) => (
-                  <div
-                    key={index}
-                    className={`w-2 h-2 rounded-full  transition-colors duration-300 ${
-                      index === currentIndex ? "bg-[#54453E]" : "bg-gray-300"
-                    }`}
-                  />
-                ))}
-              </div>
-            </div>
+           
+          
+           
           </div>
 
-          <div></div>
+          
 
           <div className="bg-[#4DD1F4] h-20 w-full mt-18"></div>
         </div>

@@ -94,16 +94,16 @@ export default function Services() {
                   <span className="opacity-70"> {section.number}</span>{" "}
                   <span className="font-bold">{section.title}</span>
                 </h3>
-                <p className="text-sm">{section.blurbTop}</p>
+                <p className="text-sm ">{section.blurbTop}</p>
               </div>
               <div className="hidden md:block col-span-5">
                 <h3 className="font-black text-2xl md:text-4xl">
                   {section.title}
                 </h3>
-                <p className="mt-3 md:mt-4 text-sm md:text-base opacity-80">
+                <p className="mt-3  md:mt-4 text-sm md:text-base opacity-80">
                   {section.blurbTop}
                 </p>
-                <p className="mt-3 md:mt-4 text-sm md:text-base opacity-80 hidden md:block">
+                <p className="mt-3 w-[90%] md:mt-4 text-sm md:text-base opacity-80 hidden md:block">
                   {section.blurbBottom}
                 </p>
               </div>
