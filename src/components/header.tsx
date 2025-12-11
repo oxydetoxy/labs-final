@@ -82,6 +82,15 @@ export default function Header() {
             Home
           </Link>
           <Link
+            href="/about"
+            className={`text-sm md:text-base ${
+              pathname === "/about" ? "font-extrabold" : ""
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            {`About`}
+          </Link>
+          <Link
             href="/services"
             className={`text-sm md:text-base ${
               pathname === "/services" ? "font-extrabold" : ""
@@ -90,6 +99,7 @@ export default function Header() {
           >
             Services
           </Link>
+          
           <Link
             href="/lets-talk"
             className={`text-sm md:text-base ${
@@ -99,6 +109,7 @@ export default function Header() {
           >
             {`Let's Talk`}
           </Link>
+         
         </div>
       )}
 
@@ -130,6 +141,14 @@ export default function Header() {
           }`}
         >
           Services
+        </Link>
+        <Link
+          href="/about"
+          className={`text-sm md:text-base ${
+            pathname === "/about" ? "font-extrabold" : ""
+          }`}
+        >
+          About
         </Link>
       </div>
 
