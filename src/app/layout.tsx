@@ -55,6 +55,12 @@ export default function RootLayout({
           `}
         </Script>
         {/* End Google Tag Manager */}
+        {/* Custom Tracking Script */}
+        <Script
+          src="http://localhost:3000/track.js"
+          data-site-id="site_1767977118852_2mphayabl"
+          strategy="afterInteractive"
+        />
       </head>
       <body
         className={`${montserrat.className} antialiased`}
