@@ -57,8 +57,8 @@ export default function RootLayout({
         {/* End Google Tag Manager */}
         {/* Custom Tracking Script */}
         <Script
-          src="http://localhost:3000/track.js"
-          data-site-id="site_1767977118852_2mphayabl"
+          src="https://dashboard-puce-chi-49.vercel.app/track.js"
+          data-site-id="site_1768062406031_dvpwf0og3"
           strategy="afterInteractive"
         />
       </head>
