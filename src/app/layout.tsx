@@ -58,7 +58,7 @@ export default function RootLayout({
         {/* Custom Tracking Script */}
         <Script
           src="https://dashboard-puce-chi-49.vercel.app/track.js"
-          data-site-id="site_1768062406031_dvpwf0og3"
+          data-site-id="site_1768062561366_t62ruvjqd"
           strategy="afterInteractive"
         />
       </head>
