@@ -38,6 +38,7 @@ export default function SubmittedPage() {
         <div className="bg-[#4DD1F4] w-[15%] h-full rounded-l-md"> </div>
       </div>
       <CTA />
+      <div className="bg-[#4DD1F4] mt-10 h-20 md:h-32" />
       <Founder />
       <HeroCTA />
       <Footer />

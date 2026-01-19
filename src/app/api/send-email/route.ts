@@ -6,12 +6,27 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { fullName, email, mobile, service, company } = body;
 
+    // Validate environment variables
+    if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+      console.error('Missing email credentials:', {
+        hasUser: !!process.env.EMAIL_USER,
+        hasPass: !!process.env.EMAIL_PASS,
+      });
+      return NextResponse.json(
+        { 
+          message: 'Email configuration error: Missing EMAIL_USER or EMAIL_PASS',
+          success: false 
+        },
+        { status: 500 }
+      );
+    }
+
     // Create transporter using Gmail with App Password
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS, // Your Gmail App Password (not regular password)
+        user: process.env.EMAIL_USER.trim(), // Your Gmail address
+        pass: process.env.EMAIL_PASS.trim().replace(/\s+/g, ''), // Remove spaces from App Password
       },
     });
 
