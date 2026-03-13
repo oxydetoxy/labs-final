@@ -122,6 +122,12 @@ export default function Footer() {
                       Services
                     </Link>
                     <Link
+                      href="/blog"
+                      className="block text-[14px] sm:text-base text-[#54453E] hover:text-[#8B4513] transition-colors"
+                    >
+                      Blog
+                    </Link>
+                    <Link
                       href="/lets-talk"
                       className="block text-[14px] sm:text-base text-[#54453E] hover:text-[#8B4513] transition-colors"
                     >

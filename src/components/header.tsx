@@ -99,7 +99,18 @@ export default function Header() {
           >
             Services
           </Link>
-          
+          <Link
+            href="/blog"
+            className={`text-sm md:text-base ${
+              pathname.startsWith("/blog") || pathname === "/founder-led-marketing-guide"
+                ? "font-extrabold"
+                : ""
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            Blog
+          </Link>
+
           <Link
             href="/lets-talk"
             className={`text-sm md:text-base ${
@@ -141,6 +152,16 @@ export default function Header() {
           }`}
         >
           Services
+        </Link>
+        <Link
+          href="/blog"
+          className={`text-sm md:text-base ${
+            pathname.startsWith("/blog") || pathname === "/founder-led-marketing-guide"
+              ? "font-extrabold"
+              : ""
+          }`}
+        >
+          Blog
         </Link>
         <Link
           href="/about"
