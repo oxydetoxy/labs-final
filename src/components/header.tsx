@@ -108,9 +108,9 @@ export default function Header() {
             }`}
             onClick={() => setIsOpen(false)}
           >
-            Blog
+            Blogs
           </Link>
-
+          
           <Link
             href="/lets-talk"
             className={`text-sm md:text-base ${
@@ -161,7 +161,7 @@ export default function Header() {
               : ""
           }`}
         >
-          Blog
+          Blogs
         </Link>
         <Link
           href="/about"
