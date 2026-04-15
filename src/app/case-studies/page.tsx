@@ -119,23 +119,23 @@ export default function CaseStudiesPage() {
                   <div className="bg-[#4DD1F4] p-4">
                     <div className="flex justify-between items-start">
                       <h3 className="text-[#54453E] font-bold text-lg">
-                        Brand Name
+                        Aradhana
                       </h3>
                       <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Industry
+                        Fashion & Lifestyle
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Achieved significant growth through strategic marketing
+                      Improved conversion rates with full-funnel campaign optimization
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +100% Growth
+                        +68% Conversions
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        2.5x ROI
+                        2.8x ROAS
                       </span>
                     </div>
                     <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
@@ -149,23 +149,23 @@ export default function CaseStudiesPage() {
                   <div className="bg-[#4DD1F4] p-4">
                     <div className="flex justify-between items-start">
                       <h3 className="text-[#54453E] font-bold text-lg">
-                        Brand Name
+                        Little Tag
                       </h3>
                       <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Industry
+                        Kidswear
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Transformed digital presence and increased conversions
+                      Scaled paid media while reducing cost per purchase
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +150% Traffic
+                        +140% Revenue
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        4x Conversions
+                        -32% CPA
                       </span>
                     </div>
                     <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
@@ -179,23 +179,23 @@ export default function CaseStudiesPage() {
                   <div className="bg-[#4DD1F4] p-4">
                     <div className="flex justify-between items-start">
                       <h3 className="text-[#54453E] font-bold text-lg">
-                        Brand Name
+                        Vaishali
                       </h3>
                       <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Industry
+                        Designer Fashion
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Boosted online sales with data-driven strategies
+                      Strengthened brand positioning with content-led growth campaigns
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +90% Sales
+                        +95% Reach
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        3x Revenue
+                        3.2x Engagement
                       </span>
                     </div>
                     <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
@@ -209,23 +209,23 @@ export default function CaseStudiesPage() {
                   <div className="bg-[#4DD1F4] p-4">
                     <div className="flex justify-between items-start">
                       <h3 className="text-[#54453E] font-bold text-lg">
-                        Brand Name
+                        Ksafe
                       </h3>
                       <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Industry
+                        Technology
                       </span>
                     </div>
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Achieved market leadership through innovative campaigns
+                      Drove qualified inbound pipeline with performance marketing
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +200% Growth
+                        +110% MQLs
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        5x Brand Awareness
+                        4.1x Pipeline Value
                       </span>
                     </div>
                     <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">

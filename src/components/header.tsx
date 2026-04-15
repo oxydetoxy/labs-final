@@ -100,6 +100,15 @@ export default function Header() {
             Services
           </Link>
           <Link
+            href="/case-studies"
+            className={`text-sm md:text-base ${
+              pathname.startsWith("/case-studies") ? "font-extrabold" : ""
+            }`}
+            onClick={() => setIsOpen(false)}
+          >
+            Case Studies
+          </Link>
+          <Link
             href="/blog"
             className={`text-sm md:text-base ${
               pathname.startsWith("/blog") || pathname === "/founder-led-marketing-guide"
@@ -162,6 +171,14 @@ export default function Header() {
           }`}
         >
           Blogs
+        </Link>
+        <Link
+          href="/case-studies"
+          className={`text-sm md:text-base ${
+            pathname.startsWith("/case-studies") ? "font-extrabold" : ""
+          }`}
+        >
+          Case Studies
         </Link>
         <Link
           href="/about"
