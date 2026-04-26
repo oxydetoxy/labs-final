@@ -1,13 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import Link from "next/link";
 import Footer from "@/components/landingpage/footer";
 import HeroCTA from "@/components/landingpage/hero-cta";
 import {
@@ -39,9 +33,12 @@ export default function CaseStudiesPage() {
             <p className="text-[#54453E] text-center text-[14px] sm:text-2xl lg:text-3xl sm:mt-4 px-4">
               Our Work, Their Wins
             </p>
-            <button className="bg-[#54453E] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md sm:mt-3 cursor-pointer text-sm sm:text-lg hover:bg-[#3d3329] transition-colors">
+            <Link
+              href="/lets-talk"
+              className="bg-[#54453E] text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md sm:mt-3 cursor-pointer text-sm sm:text-lg hover:bg-[#3d3329] transition-colors"
+            >
               Get In Touch!
-            </button>
+            </Link>
             <div className="absolute bottom-0 left-0 right-0 h-[20%] md:h-[30%]  z-10"></div>
           </div>
         </div>
@@ -68,19 +65,22 @@ export default function CaseStudiesPage() {
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Scaled D2C sales by 120% in 6 months
+                      2x scale-up while sustaining 9x ROAS during sale events.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +120% Growth
+                        2x Scale-Up
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        3x Leads
+                        9x ROAS
                       </span>
                     </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
+                    <Link
+                      href="/case-studies/shades-of-india"
+                      className="inline-block bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors"
+                    >
                       Read More
-                    </button>
+                    </Link>
                   </div>
                 </div>
 
@@ -98,139 +98,22 @@ export default function CaseStudiesPage() {
                   </div>
                   <div className="p-6">
                     <p className="text-[#54453E] mb-4">
-                      Increased engagement by 85% and doubled sales
+                      Achieved 5.42% ad recall in a first-ever digital campaign.
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +85% Engagement
+                        5.42% Ad Recall
                       </span>
                       <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        2x Sales
+                        2.5M+ Reach
                       </span>
                     </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
+                    <Link
+                      href="/case-studies/payal-jain"
+                      className="inline-block bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors"
+                    >
                       Read More
-                    </button>
-                  </div>
-                </div>
-
-                {/* Case Study Card 3 */}
-                <div className="bg-white border-2 border-[#4DD1F4] rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="bg-[#4DD1F4] p-4">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-[#54453E] font-bold text-lg">
-                        Aradhana
-                      </h3>
-                      <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Fashion & Lifestyle
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-[#54453E] mb-4">
-                      Improved conversion rates with full-funnel campaign optimization
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +68% Conversions
-                      </span>
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        2.8x ROAS
-                      </span>
-                    </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
-                      Read More
-                    </button>
-                  </div>
-                </div>
-
-                {/* Case Study Card 4 */}
-                <div className="bg-white border-2 border-[#4DD1F4] rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="bg-[#4DD1F4] p-4">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-[#54453E] font-bold text-lg">
-                        Little Tag
-                      </h3>
-                      <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Kidswear
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-[#54453E] mb-4">
-                      Scaled paid media while reducing cost per purchase
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +140% Revenue
-                      </span>
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        -32% CPA
-                      </span>
-                    </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
-                      Read More
-                    </button>
-                  </div>
-                </div>
-
-                {/* Case Study Card 5 */}
-                <div className="bg-white border-2 border-[#4DD1F4] rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="bg-[#4DD1F4] p-4">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-[#54453E] font-bold text-lg">
-                        Vaishali
-                      </h3>
-                      <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Designer Fashion
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-[#54453E] mb-4">
-                      Strengthened brand positioning with content-led growth campaigns
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +95% Reach
-                      </span>
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        3.2x Engagement
-                      </span>
-                    </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
-                      Read More
-                    </button>
-                  </div>
-                </div>
-
-                {/* Case Study Card 6 */}
-                <div className="bg-white border-2 border-[#4DD1F4] rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="bg-[#4DD1F4] p-4">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-[#54453E] font-bold text-lg">
-                        Ksafe
-                      </h3>
-                      <span className="bg-white border border-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm">
-                        Technology
-                      </span>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <p className="text-[#54453E] mb-4">
-                      Drove qualified inbound pipeline with performance marketing
-                    </p>
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        +110% MQLs
-                      </span>
-                      <span className="bg-[#4DD1F4] text-[#54453E] px-3 py-1 rounded-full text-sm font-semibold">
-                        4.1x Pipeline Value
-                      </span>
-                    </div>
-                    <button className="bg-[#4DD1F4] text-[#54453E] px-4 py-2 rounded-md font-semibold hover:bg-[#3db8d9] transition-colors">
-                      Read More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>
