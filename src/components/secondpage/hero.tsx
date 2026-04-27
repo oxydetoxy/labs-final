@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function SecondPageHero() {
   return (
     <div
@@ -12,15 +14,16 @@ export default function SecondPageHero() {
           Whether it’s paid ads, SEO, or web development, each service is
           optimized to connect, convert, and compound results over time.
         </h2>
-        <button
-          className="z-10  ml-4 mt-5 bg-[#54453E] text-white rounded-[15px] text-base font-semibold"
+        <Link
+          href="/lets-talk"
+          className="z-10 ml-4 mt-5 bg-[#54453E] text-white rounded-[15px] text-base font-semibold inline-flex items-center justify-center"
           style={{
             width: "150px",
             height: "45px",
           }}
         >
           Get In Touch
-        </button>
+        </Link>
       </div>
     </div>
   );

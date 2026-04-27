@@ -13,9 +13,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12">
           <div>
-            <div className="flex flex-col lg:flex-row gap-8 justify-center lg:justify-between items-center lg:items-start ml-6 sm:ml-8 text-center lg:text-left">
+            <div className="flex flex-col lg:flex-row gap-8 justify-center lg:justify-between items-center lg:items-start text-center lg:text-left">
               <div className="p-4 lg:p-6 flex flex-col gap-0 lg:gap-0 items-center lg:items-start">
-                <div className="flex gap-4 mb-6 justify-center lg:justify-start -ml-14 ">
+                <div className="flex gap-4 mb-6 justify-center lg:justify-start">
                   <Link
                     href="https://www.linkedin.com/company/thestrategylab-1618/"
                     target="_blank"
@@ -49,7 +49,7 @@ export default function Footer() {
                     <Facebook className="w-6 h-6 lg:w-5 lg:h-5" />
                   </Link>
                 </div>
-                <div className="gap-4 mb-6 hidden lg:flex -ml-14">
+                <div className="gap-4 mb-6 hidden lg:flex">
                   <Link
                     href="https://www.instagram.com/thestrategylabhq?igsh=MW9nZDAxYTZmYWlqMw%3D%3D&utm_source=qr"
                     target="_blank"
@@ -101,8 +101,8 @@ export default function Footer() {
                   </button>
                 </form>
               </div>
-              <div className="flex w-full justify-between">
-                <div className="space-y-2 mb-4">
+              <div className="flex flex-col sm:flex-row w-full gap-8 sm:justify-between items-center sm:items-start">
+                <div className="space-y-2 mb-4 text-center sm:text-left">
                   <h3
                     className={`text-[20px] sm:text-[36px] font-normal text-[#54453E] mb-6 leading-[100%] ${lillitaOne.className}`}
                   >
@@ -135,7 +135,7 @@ export default function Footer() {
                     </Link>
                   </div>
                 </div>
-                <div className="block lg:hidden w-[45%]">
+                <div className="block lg:hidden w-full sm:w-[45%] text-center sm:text-left">
                   <h3
                     className={`text-[20px] sm:text-[36px] font-normal text-[#54453E] mb-3 lg:mb-6 leading-[100%] ${lillitaOne.className}`}
                   >

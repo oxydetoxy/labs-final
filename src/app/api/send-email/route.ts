@@ -5,6 +5,9 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
     const { fullName, email, mobile, service, company } = body;
+    const serviceText = Array.isArray(service)
+      ? service.join(", ")
+      : service || "Not specified";
 
     // Validate environment variables
     if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
@@ -61,7 +64,7 @@ export async function POST(request: NextRequest) {
                 </tr>
                 <tr>
                   <td style="padding: 12px 0; border-bottom: 1px solid #e9ecef; font-weight: bold; color: #54453E;">🎯 Service:</td>
-                  <td style="padding: 12px 0; border-bottom: 1px solid #e9ecef; color: #333;">${service || 'Not specified'}</td>
+                  <td style="padding: 12px 0; border-bottom: 1px solid #e9ecef; color: #333;">${serviceText}</td>
                 </tr>
                 <tr>
                   <td style="padding: 12px 0; font-weight: bold; color: #54453E;">🏢 Company:</td>

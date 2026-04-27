@@ -1,10 +1,21 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 
 export default function ThirdPage() {
   const router = useRouter();
+  const [selectedServices, setSelectedServices] = useState<string[]>([]);
+  const serviceOptions = ["SEO", "Paid Marketing", "Website Development", "Other"];
+
+  const toggleService = (service: string) => {
+    setSelectedServices((prev) =>
+      prev.includes(service)
+        ? prev.filter((item) => item !== service)
+        : [...prev, service]
+    );
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -15,7 +26,7 @@ export default function ThirdPage() {
       fullName: formData.get("fullName") as string,
       email: formData.get("email") as string,
       mobile: formData.get("mobile") as string,
-      service: formData.get("service") as string,
+      service: selectedServices,
       company: formData.get("company") as string,
     };
 
@@ -90,32 +101,22 @@ export default function ThirdPage() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-4 md:gap-5">
-          <div className="relative">
-            <select
-              name="service"
-              className="w-full rounded-xl border pl-10 pr-5 py-4 bg-white/50 backdrop-blur-sm placeholder:opacity-70 focus:outline-none focus:ring-2 focus:ring-[#4DD1F4] shadow-none appearance-none"
-              style={{ boxShadow: "none" }}
-            >
-              <option value="">Select One</option>
-              <option value="SEO">SEO</option>
-              <option value="Paid Marketing">Paid Marketing</option>
-              <option value="Website Development">Website Development</option>
-              <option value="Other">Other</option>
-            </select>
-            <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
-              <svg
-                className="w-5 h-5 text-gray-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
+          <div className="rounded-xl border px-5 py-4 bg-white">
+            <p className="text-sm mb-3 opacity-70">Select services (multiple)</p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {serviceOptions.map((service) => (
+                <label key={service} className="flex items-center gap-2 text-sm">
+                  <input
+                    type="checkbox"
+                    name="service"
+                    value={service}
+                    checked={selectedServices.includes(service)}
+                    onChange={() => toggleService(service)}
+                    className="h-4 w-4 accent-[#4DD1F4]"
+                  />
+                  {service}
+                </label>
+              ))}
             </div>
           </div>
           <input

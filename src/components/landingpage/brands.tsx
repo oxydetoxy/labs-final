@@ -38,9 +38,9 @@ export default function Brands() {
           <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
             Real Results
           </h1>
-          <Link href="/services">
+          <Link href="/case-studies">
             <button className="bg-[#4DD1F4] text-[#54453E] px-6 py-2 rounded-md font-light mt-4 mb-8 z-50 hover:bg-[#4DD1F4]/80 hover:scale-105 transition-all duration-300">
-              All Services
+              Case Studies
             </button>
           </Link>
         </div>
